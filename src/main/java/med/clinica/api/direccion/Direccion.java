@@ -24,4 +24,12 @@ public class Direccion {
         this.ciudad = datosDireccion.ciudad();
         this.complemento = datosDireccion.complemento();
     }
+
+    public Direccion actualizarDatos(DatosDireccion direccion) {
+        this.calle= direccion.calle();
+        this.numero = direccion.numero();
+        this.ciudad = direccion.ciudad();
+        this.complemento = direccion.complemento();
+        return this;
+    }
 }
